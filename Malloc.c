@@ -7,7 +7,7 @@ int main()
 	int i,n;
 	printf("How many element you want to enter: ");
 	scanf("%d",&n);
-	ptr=(int *)calloc(n, sizeof(int));
+	ptr=(int *)malloc(n * sizeof(int));
 	for(i=0;i<n;i++)
 	{
 	  scanf("%d",&ptr[i]);
